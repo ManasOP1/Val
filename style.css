@@ -607,9 +607,9 @@ body {
 }
 
 .name-reveal {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: clamp(2.25rem, 7vw, 3.25rem);
-  font-weight: 400;
+  font-weight: 600;
   color: var(--deep-plum);
   text-shadow: 0 1px 3px rgba(91, 58, 107, 0.15);
   text-align: center;
