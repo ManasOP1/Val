@@ -591,8 +591,7 @@ body {
   visibility: visible;
 }
 
-.success-overlay .success-message,
-.success-overlay .name-reveal {
+.success-overlay .success-message {
   position: relative;
   z-index: 2;
 }
@@ -604,34 +603,6 @@ body {
   text-align: center;
   margin-bottom: 0.5rem;
   animation: successPop 0.6s ease-out 0.3s both;
-}
-
-.name-reveal {
-  font-family: 'Dancing Script', cursive;
-  font-size: clamp(2.25rem, 7vw, 3.25rem);
-  font-weight: 600;
-  color: var(--deep-plum);
-  text-shadow: 0 1px 3px rgba(91, 58, 107, 0.15);
-  text-align: center;
-  margin-top: 0.5rem;
-  opacity: 0;
-  transform: scale(0.2);
-  letter-spacing: 0.02em;
-}
-
-.name-reveal.show {
-  animation: namePopUp 1s ease-out forwards;
-}
-
-@keyframes namePopUp {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
 
 @keyframes successPop {

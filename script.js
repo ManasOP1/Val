@@ -13,7 +13,6 @@
   const mainCard = document.getElementById('mainCard');
   const successOverlay = document.getElementById('successOverlay');
   const heartsBurst = document.getElementById('heartsBurst');
-  const nameReveal = document.getElementById('nameReveal');
   const heartsContainer = document.querySelector('.hearts-container');
   const catReaction = document.getElementById('catReaction');
   const catNoGuard = document.getElementById('catNoGuard');
@@ -249,10 +248,6 @@
     noBtn.style.display = 'none';
 
     spawnHeartsBurst();
-
-    if (nameReveal) {
-      setTimeout(() => nameReveal.classList.add('show'), 700);
-    }
   }
 
   yesBtn.addEventListener('click', triggerCelebration);
